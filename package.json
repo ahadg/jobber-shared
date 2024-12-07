@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
@@ -20,6 +20,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahadg/talentconnect-shared"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     ".": {
       "import": "./esm/index.js",
@@ -32,7 +39,11 @@
   },
   "types": "./src/index.d.ts",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.16.2",
+    "cloudinary": "^2.5.1",
     "express": "^4.21.1",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.8.3",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
