@@ -1,6 +1,6 @@
 {
-  "name": "jobber-shared",
-  "version": "1.0.0",
+  "name": "@ahadg/jobber-shared",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "engines": {
@@ -22,7 +22,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahadg/jobber-shared"
+    "url": "git+https://github.com/ahadg/jobber-shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
